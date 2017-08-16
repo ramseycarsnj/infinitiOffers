@@ -3,7 +3,71 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-  
+    <script type="text/javascript">
+    function printDiv(divName) {
+       var printContents = document.getElementById(divName).innerHTML;
+       var originalContents = document.body.innerHTML;
+
+       document.body.innerHTML = printContents;
+
+       window.print();
+
+       document.body.innerHTML = originalContents;
+  }
+    </script>
+    <style media="screen">
+      #contentContainer {
+        /*font-family: Helvetica, sans-serif;
+        font-size: 25px;
+        border: 1px solid #000000;
+        padding: 30px;
+        width: 560px;*/
+      }
+      img {
+        width: 560px;
+      }
+      h1 {
+        font-size: 38px;
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        margin: 0 auto 20px auto;
+      }
+      li {
+        padding: 10px 0;
+      }
+      #disc {
+        width: 500px;
+        margin: 0 auto;
+        font-size: 10px;
+        top: 320px;
+      }
+      #disc {
+        display: block;
+      }
+      .pageButton {
+        text-decoration: none;
+        font-family: Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 15px 40px;
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #000000;
+        text-align: center;
+        margin: 0 10px;
+        transition: background-color 0.6s;
+      }
+      .pageButton:hover{
+        background-color: #E5E5E5;
+        transition: background-color 0.6s;
+      }
+      #buttonContainer {
+        width: 560px;
+        text-align: center;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
     <div id="contentContainer">

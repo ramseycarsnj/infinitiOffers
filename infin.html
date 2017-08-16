@@ -21,6 +21,9 @@
       width: 560px;
       margin: 30px auto 0 auto;
     }
+    #mobInfo {
+      display: none;
+    }
       #contentContainer {
         /*font-family: Helvetica, sans-serif;
         font-size: 25px;
@@ -72,21 +75,58 @@
         text-align: center;
         margin: 0;
       }
+      @media(max-width:500px) {
+        #contentContainer {
+          font-family: Helvetica, sans-serif;
+          font-size: 20px;
+          border: 1px solid #000000;
+          padding: 30px;
+          width: 290px;
+          margin: 0;
+        }
+        body {
+          text-align: center;
+          width: 300px;
+          margin: 30px 0 0 0;
+        }
+        #buttonContainer {
+          width: 300px;
+          text-align: center;
+          margin: 0;
+        }
+        img {
+          display: none;
+        }
+        #mobInfo {
+          display: inline;
+        }
+        .pageButton {
+          display: block;
+        }
+        #disc {
+          width: 200px;
+          margin: 0 auto;
+          font-size: 10px;
+          top: 320px;
+        }
+      }
     </style>
   </head>
   <body>
     <div id="contentContainer">
       <img src="coupon-cpo-offer-aug-2017.png" />
-      <!-- <h1>Certified Pre-Owned Special</h1>
-      <ul>
-        <li>$00000.00 To $19999.00:&nbsp; <b>$350 Discount</b></li>
-        <li>$20000.00 To $29999.00:&nbsp; <b>$500 Discount</b></li>
-        <li>$30000.00 To $39999.00:&nbsp; <b>$750 Discount</b></li>
-        <li>$40000.00 To $49999.00:&nbsp; <b>$1000 Discount</b></li>
-        <li>$50000.00 To $59999.00:&nbsp; <b>$1250 Discount</b></li>
-      </ul>
+      <div id="mobInfo">
+        <h1>Certified Pre-Owned Special</h1>
+        <ul>
+          <li>$00000.00 To $19999.00:&nbsp; <b>$350 Discount</b></li>
+          <li>$20000.00 To $29999.00:&nbsp; <b>$500 Discount</b></li>
+          <li>$30000.00 To $39999.00:&nbsp; <b>$750 Discount</b></li>
+          <li>$40000.00 To $49999.00:&nbsp; <b>$1000 Discount</b></li>
+          <li>$50000.00 To $59999.00:&nbsp; <b>$1250 Discount</b></li>
+        </ul>
 
-      <p id="disc">Offer valid on Ramsey Infiniti Certified Pre-Owned Vehicles only. Must present coupon at time of arrival, cannot be combined with any other offers or incentives. Prices do not include additional fees and costs of closing, including government fees and taxes, any finance charges, any dealer documentation fees, any emissions testing fees or other fees. All prices, specifications and availability subject to change without notice. Contact dealer for most current information. Not responsible for typographical errors.</p> -->
+        <p id="disc">Offer valid on Ramsey Infiniti Certified Pre-Owned Vehicles only. Must present coupon at time of arrival, cannot be combined with any other offers or incentives. Prices do not include additional fees and costs of closing, including government fees and taxes, any finance charges, any dealer documentation fees, any emissions testing fees or other fees. All prices, specifications and availability subject to change without notice. Contact dealer for most current information. Not responsible for typographical errors.</p>
+      </div>
     </div>
     <br>
     <br>
